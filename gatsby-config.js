@@ -28,18 +28,22 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      resolve: 'gatsby-plugin-webfonts',
       options: {
-        fonts: [
-          {
-            family: 'Rubik',
-            variants: ['400', '400i', '600', '600i'],
-          },
-          {
-            family: 'Open Sans',
-            variants: ['400', '400i', '700', '700i'],
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: 'Rubik',
+              variants: ['400', '400i', '700', '700i'],
+            },
+            {
+              family: 'Open Sans',
+              variants: ['400', '400i', '700', '700i'],
+            },
+          ],
+        },
+        useMinify: true,
+        usePreload: true,
       },
     },
   ],
