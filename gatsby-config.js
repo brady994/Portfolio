@@ -27,5 +27,20 @@ module.exports = {
         theme_color_in_head: false,
       },
     },
+    {
+      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      options: {
+        fonts: [
+          {
+            family: 'Rubik',
+            variants: ['400', '400i', '600', '600i'],
+          },
+          {
+            family: 'Open Sans',
+            variants: ['400', '400i', '700', '700i'],
+          },
+        ],
+      },
+    },
   ],
 };
